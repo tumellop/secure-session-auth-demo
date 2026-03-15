@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Assignment 1: Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .card { padding: 20px; border: 1px solid #ccc; border-radius: 8px; max-width: 500px;}
+        .logout-btn { display: inline-block; margin-top: 20px; color: white; background: #d9534f; padding: 10px 15px; text-decoration: none; border-radius: 5px;}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Welcome to the Dashboard, <%= name %>!</h2>
+        <p>You have successfully authenticated.</p>
+        <p><strong>Current State Mechanism:</strong> <%= stateMethod %></p>
+        
+        <a href="/logout" class="logout-btn">Logout</a>
+    </div>
+</body>
+</html>
